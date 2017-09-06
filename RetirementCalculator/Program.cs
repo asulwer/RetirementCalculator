@@ -6,13 +6,13 @@ namespace RetirementCalculator
     {
         static void Main(string[] args)
         {
+            //example input: 200,12700,18,15,5
+            Console.WriteLine("Enter these 5 values: weeklyinvestment,currentsavings,annualpercentage,annualtaxes,maxyears");
+            Console.WriteLine("Press any key to get started");
+            Console.ReadKey();
+
             do
             {
-                //example input: 200,12700,18,15,5
-                Console.WriteLine("Enter these 5 values: weeklyinvestment,currentsavings,annualpercentage,annualtaxes,maxyears");
-                Console.WriteLine("Press any key to get started");
-                Console.ReadKey();
-
                 Console.Write("weeklyinvestment ");
                 double dWeeklyInvestment = Convert.ToDouble(Console.ReadLine());
 
