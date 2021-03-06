@@ -13,19 +13,19 @@ namespace RetirementCalculator
 
             do
             {
-                Console.Write("weeklyinvestment ");
+                Console.Write("weeklyinvestment ($100) ");
                 double dWeeklyInvestment = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("currentsavings ");
+                Console.Write("currentsavings ($100) ");
                 double dCurrentSavings = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("annualpercentage ");
+                Console.Write("annualpercentage (18%) ");
                 double dAnnualPercentage = Convert.ToDouble(Console.ReadLine()) / 100; //divide by 100 to get actual percentage value as a decimal
 
-                Console.Write("annualtaxes ");
+                Console.Write("annualtaxes (15%) ");
                 double dAnnualTaxes = Convert.ToDouble(Console.ReadLine()) / 100; //divide by 100 to get actual percentage value as a decimal
 
-                Console.Write("maxyears ");
+                Console.Write("maxyears (5yrs) ");
                 uint uiMaxYears = Convert.ToUInt32(Console.ReadLine());
 
                 double dFinal = ((dWeeklyInvestment * 52) + dCurrentSavings) + ((((dWeeklyInvestment * 52) + dCurrentSavings) * dAnnualPercentage) * (1 - dAnnualTaxes));
